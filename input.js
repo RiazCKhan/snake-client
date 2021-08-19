@@ -11,7 +11,7 @@ const setupInput = function(conn) {
   stdin.setEncoding('utf8');
   stdin.resume();
   // Added Handling CTRL + C User Input to exit game.
-  stdin.on('data', handlerUserInput)
+  stdin.on('data', handleUserInput)
   return stdin;
 }
 
@@ -31,7 +31,17 @@ const handleUserInput = (key) => {
   if (key === '\u0064') {
     connection.write("Move: right");
   }
+  if (key === '\u007A') { // z
+    connection.write("Say: GLHF")
+  }
+  if (key === '\u0078') { // x
+    connection.write("Say: GG")
+  }
+  if (key === '\u0063') { // c
+    connection.write("Say: EZ")
+  }
 }
+
 
 module.exports = {
   setupInput,
