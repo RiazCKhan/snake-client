@@ -1,10 +1,13 @@
 const net = require('net');
 
 // Establishes connection with the game server
-const connect = function(error) {
+const connect = function() {
+  // Connection print
+  console.log("Successfully Connected to Game Server")
+
   const conn = net.createConnection({ 
     host: 'localhost',
-    port: 50541
+    port: 50541,    
   });
 
   // Event Handler to handle incoming data from server
