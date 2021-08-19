@@ -10,7 +10,7 @@ const setupInput = function(conn) {
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
   stdin.resume();
-  // Added Handling CTRL + C User Input to exit game.
+// Added Handling CTRL + C User Input to exit game.
   stdin.on('data', handleUserInput)
   return stdin;
 }
@@ -41,7 +41,6 @@ const handleUserInput = (key) => {
     connection.write("Say: EZ")
   }
 }
-
 
 module.exports = {
   setupInput,
