@@ -17,15 +17,6 @@ const connect = function() {
     conn.write('Name: RCK');
   });
 
-  // HARD CODE MOVEMENT EXPIREMENTS
-/*   conn.on('connect', () => {
-    conn.write("Move: up")
-
-      setInterval(() => {
-        conn.write("Move: left");
-      }, 100);
-  }) */
-
 // interpret incoming data as text
   conn.setEncoding('utf8'); 
 
