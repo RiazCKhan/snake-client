@@ -15,6 +15,11 @@ const connect = function() {
     console.log(data)
   })
 
+  // Sending a Name + Name Command
+  conn.on('connect', () => {
+    conn.write('Name: RCK');
+  });
+
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
 
