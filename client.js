@@ -3,26 +3,24 @@ const { IP, PORT } = require('./constants');
 
 // Establishes connection with the game server
 const connect = function() {
-  const conn = net.createConnection({ 
+  const conn = net.createConnection({
     host: IP,
-    port: PORT,    
+    port: PORT,
   });
-// Event Handler to handle incoming data from server
+  // Event Handler to handle incoming data from server
   conn.on('data',(data) => {
-    console.log('Almighty Server: ', data)
-  })
-// Connection Print + Sending a Name + Name Command
+    console.log('Almighty Server: ', data);
+  });
+  // Connection Print + Sending a Name + Name Command
   conn.on('connect', () => {
-    console.log("Successfully Connected to The Almighty Server")
+    console.log("Successfully Connected to The Almighty Server");
     conn.write('Name: RCK');
   });
-
-// interpret incoming data as text
-  conn.setEncoding('utf8'); 
-
+  // interpret incoming data as text
+  conn.setEncoding('utf8');
   return conn;
-}
+};
 
 module.exports = {
   connect
-}
+};
