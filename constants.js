@@ -5,15 +5,14 @@ const movement = {
   '\u0077': "Move: up", // w
   '\u0061': "Move: left", // a
   '\u0073': "Move: down", // s
-  '\u0064': "Move: right" // d 
-}
+  '\u0064': "Move: right" // d
+};
 
 const messages = {
   '\u007A': "Say: GLHF", // z
   '\u0078': "Say: GG", // x
-  '\u0063': "Say: EZ" // c 
-}
-
+  '\u0063': "Say: EZ" // c
+};
 
 module.exports = {
   IP,
