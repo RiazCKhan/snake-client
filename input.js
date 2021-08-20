@@ -6,7 +6,7 @@ let connection;
 // Setup User Interface
 // Specifically, so that we can handle user input via stdin
 const setupInput = function(conn) {
-  connection = conn
+  connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
@@ -17,15 +17,15 @@ const setupInput = function(conn) {
 };
 
 const handleUserInput = (key) => {
-  console.log('handleUserInput called')
+  console.log('handleUserInput called');
   if (key === '\u0003') {
     process.exit();
   }
   if (movement[key] !== undefined) {
-    connection.write(movement[key])
+    connection.write(movement[key]);
   }
   if (messages[key] !== undefined) {
-    connection.write(messages[key])
+    connection.write(messages[key]);
   }
 };
 
