@@ -8,17 +8,18 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Player Controls
 
-Movement: 
-w = Up, 
-a = Left, 
-s = Down, 
-d = Right
+Movement:
 
-Friendly Banter: 
+w = Up, <br />
+a = Left, <br />
+s = Down, <br />
+d = Right <br />
 
-z = GLHF, Good Luck Have Fun
-x = GG, Good Game
-c = EZ, Easy
+Friendly Banter:
+
+z = GLHF, Good Luck Have Fun <br />
+x = GG, Good Game <br />
+c = EZ, Easy <br />
 
 ## Final Product
 
